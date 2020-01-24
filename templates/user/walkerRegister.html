@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Chosen -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
+<link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/> -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,6 +16,28 @@
 
     <br><br>
 
-    This is where you sign up to walk dogs
+    <h1>Walk, train, and petsit dogs with us.</h1>
+    <hr>
+    <h3>Working with us entitles you to some great benefits. <br>
+        You'll get paid to look after dogs, work when you want, and <br>
+        Wes will tuck you in at night and give you a kiss-- each and <br>
+        every night. 
+    </h3>
+
+
+    <form method="POST">
+        <div>
+            <label for="servetype">Choose how you'd like to work with us: </label>
+            <select name="servetype">
+                <option value="walk">Walk dogs</option>
+                <option value="sit">Pet sitting</option>
+                <option value="train">Train dogs</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="send it">
+        </div>
+    </form>
+
 </body>
 </html>

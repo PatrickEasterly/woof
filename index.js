@@ -61,6 +61,20 @@ app.get('/walker', (req, res)=>{
     })
 })
 
+app.post('/walker', parseForm, (req, res)=>{
+    console.log(req.body)
+    if(req.body.servetype == 'train'){
+        res.redirect('')
+    }
+    if(req.body.servetype == 'walk'){
+        res.redirect('')
+    }
+    if(req.body.servetype == 'sit'){
+        res.redirect('')
+    }
+    res.redirect('/walker');
+})
+
 app.get('/walkee', (req, res)=>{
     res.render('user/userRegister', {
         locals: {},
