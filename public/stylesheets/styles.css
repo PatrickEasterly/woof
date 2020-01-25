@@ -17,6 +17,12 @@ img {
 
 .nav {
     display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 1%;
+}
+
+.nav-static {
+    display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin-bottom: 1%;
 }
